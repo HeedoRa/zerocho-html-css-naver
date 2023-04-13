@@ -1,0 +1,33 @@
+▶ <head> 태그 사라지게 하는 Console
+- document.head.parentNode.removeChild(document.head);
+
+▶ <meta charset="utf-8"> 등 닫는 태그가 없는 태그
+- <meta charset="utf-8" /> 처럼 무조건 닫아라
+
+▶ <head>에 네이버 아이콘 넣기
+- 네이버 아이콘 저장경로를 개발자도구에서 찾아서 다운받는다.
+- 해당 아이콘 포함된 링크태그를 붙여넣는다.
+- href="./favicon.ico"에서 ./는 현재폴더를 의미한다.
+
+▶ 구글 웹스토어 headingsmap
+- 네이버의 제목 태그들을 알 수 있음
+
+▶ 주석 (comment)
+- <!-- 주석입니다 --> 형태로 작성
+
+▶ <legend> 태그
+- 범례
+
+▶ <input />
+- 메세지박스 나타남
+
+▶ <textarea></textarea>
+- 더 큰 메세지박스
+
+▶ input 에 radio type 특징
+<input type="radio" name="group" />
+<input type="radio" name="group" />
+- 그룹이라는 같은 이름의 radio 버튼 둘 중 하나만 선택됨. 동시 클릭 불가
+
+▶ <button>검색</button> 태그
+- 검색이라고 쓰인 검색버튼 생김
