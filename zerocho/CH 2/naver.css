@@ -1,0 +1,86 @@
+/* css에서 * 선택자는 모든 것에 적용을 의미함 */
+* {
+    box-sizing:border-box;
+}
+
+/* Cascading Style Sheet */
+/* 선택자(selector) */
+
+#header-center {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+/* header-center의 자손인 h1의 자손인 span을 display:none; */
+#header-center h1 span{
+    display:none;
+}
+
+#header-search > a {
+    text-decoration: none;
+}
+
+/* 자식태그 #header-search > h1 { } */
+/* 자손태그 #header-center h1 { } */
+#header-search h1 {
+    width:222px;
+    height: 52px;
+    display:inline-block;
+    /* background: 입력 후 이미지주소, 포지션, 반복 입력 */
+    /* background-image: url(./sp_main_947f65.png) + background-position: 0 -158px; + background-repeat: no-repeat; */
+    background: url(./sp_main_947f65.png) 0px -158px no-repeat;
+    background-size: 442px 428px;
+    text-indent: 100%;
+    overflow:hidden;
+    vertical-align: middle;
+}
+
+/* 검색엔진이 두번째로 중요한 컨텐츠임을 알게 하기위해 h2를 입력하지만 display는 none함 */
+
+#header-search > fieldset {
+    width:520px;
+    height: 49px;
+    display:inline-block;
+    margin-left:20px;
+    padding: 12px 0 12px 10px; /* padding:위px 오른쪽 아래쪽 왼쪽 시계방향 */
+    border: 2px solid #19ce60; /* hex 표기법 #19 빨강 ce 파랑 60 초록 */
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+#header-search input {
+    border:none;
+    padding: 0;
+    outline: none;
+    vertical-align: middle;
+}
+
+#header-search fieldset button {
+    width: 49px;
+    height: 49px;
+    border:0;
+    padding:0;
+    background: #19ce60;
+}
+
+/* button안에 span 추가하고, span display를 inline:block 설정 후
+    width와 height를 주면 버튼 안에 네모 칸 하나 더 생김.
+    거기에 url로 이미지를 넣고, background-size로 이미지 크기 조정 */
+#search-image {
+    display:inline-block;
+    width:21px;
+    height:21px;
+    background: url(./sp_main_947f65.png) -420px -24px no-repeat;
+    background-size: 443px 428px;
+    margin: 14px;
+}
+
+/* blind 속성을 이용해 스크린리더에게만 읽히게 하고 화면은 none */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
